@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { cinzelDecorative, lora, pressStart, vt323 } from "@/config/fonts";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Footer, Header } from "@/components/molecules";
+import { ReactLenis } from "@/utils/lenis";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cinzelDecorative.variable} ${lora.variable} ${vt323.variable} ${pressStart.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <ReactLenis root options={{ duration: 0.5 }}>
+          {children}
+        </ReactLenis>
       </body>
     </html>
   );
