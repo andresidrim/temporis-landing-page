@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, use } from 'react';
+import React from 'react';
 import {
   Table,
   TableBody,
@@ -11,8 +11,8 @@ import { getAmazonHackingVisits } from '@/lib/getVisits';
 import heroBg from 'public/images/hero-bg.png';
 import Image from 'next/image';
 
-const AmazonHackingVisitsPage = () => {
-  const visits = use(getAmazonHackingVisits());
+const AmazonHackingVisitsPage = async () => {
+  const visits = await getAmazonHackingVisits();
 
   return (
     <div className="min-h-screen flex flex-col items-center p-4 min-w-screen">
