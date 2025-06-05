@@ -30,12 +30,16 @@ const AmazonHackingVisitsPage = async () => {
             <TableCell colSpan={4}>Visitas no Amazon Hacking</TableCell>
           </TableRow>
           <TableRow className="border-t-20 border-transparent">
-            <TableCell className="text-left font-bold pl-6">Nome</TableCell>
-            <TableCell className="text-left font-bold pl-6">
+            <TableCell className="text-left font-bold pl-6 text-temporis-green">
+              Nome
+            </TableCell>
+            <TableCell className="text-left font-bold pl-6 text-temporis-green">
               Local de Origem
             </TableCell>
-            <TableCell className="text-left font-bold pl-6">Museu</TableCell>
-            <TableCell className="text-left font-bold pl-6">
+            <TableCell className="text-left font-bold pl-6 text-temporis-green">
+              Museu
+            </TableCell>
+            <TableCell className="text-left font-bold pl-6 text-temporis-green">
               Visitado Em
             </TableCell>
           </TableRow>
@@ -43,10 +47,16 @@ const AmazonHackingVisitsPage = async () => {
         <TableBody>
           {visits.map((visit) => (
             <TableRow className="" key={visit.id}>
-              <TableCell className="pl-6">{visit.name}</TableCell>
-              <TableCell className="pl-6">{visit.birthPlace}</TableCell>
-              <TableCell className="pl-6">{visit.museum.name}</TableCell>
-              <TableCell className="pl-6">
+              <TableCell className="pl-6 text-temporis-green">
+                {visit.name}
+              </TableCell>
+              <TableCell className="pl-6 text-temporis-green">
+                {visit.birthPlace}
+              </TableCell>
+              <TableCell className="pl-6 text-temporis-green">
+                {visit.museum.name}
+              </TableCell>
+              <TableCell className="pl-6 text-temporis-green">
                 {new Date(visit.visitedAt).toLocaleDateString('pt-BR', {
                   day: '2-digit',
                   month: '2-digit',
