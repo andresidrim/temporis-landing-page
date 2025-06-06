@@ -8,7 +8,7 @@ export default function OurPurpose() {
     <section id={Sections.OurPurpose} className="w-full h-fit pt-[108px]">
       <Container className="lg:flex-row gap-20">
         <div className="flex flex-col items-start justify-center w-full gap-12">
-          <h2 className="font-lora font-bold text-4xl md:text-5xl">
+          <h2 className="font-inter font-bold text-4xl md:text-5xl">
             Nosso propósito
           </h2>
           <p className="text-lg whitespace-pre-line text-balance">

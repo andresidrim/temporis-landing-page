@@ -8,7 +8,7 @@ import { PiInstagramLogo } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <footer className="bg-temporis-black font-lora text-temporis-white w-full h-fit border-t-temporis-yellow border-t-8 flex flex-col items-center justify-center pb-8">
+    <footer className="bg-temporis-black font-inter text-temporis-white w-full h-fit border-t-temporis-yellow border-t-8 flex flex-col items-center justify-center pb-8">
       <a
         href={`#${Sections.Hero}`}
         className="w-full h-fit cursor-pointer flex items-center justify-center mt-12"

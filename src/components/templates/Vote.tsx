@@ -21,8 +21,8 @@ export default function Vote() {
         className="absolute w-full h-full inset-0 object-cover object-center pixelated-image"
       />
       <div className="absolute w-full h-full inset-0 bg-black/70 z-10" />
-      <Container className="relative font-lora text-7xl z-20 animate-fade-in gap-12">
-        <h2 className="font-lora font-bold text-4xl md:text-5xl text-temporis-white">
+      <Container className="relative font-inter text-7xl z-20 animate-fade-in gap-12">
+        <h2 className="font-inter font-bold text-4xl md:text-5xl text-temporis-white text-center">
           Vote no Temporis
         </h2>
         <p className="text-2xl whitespace-pre-line text-balance text-temporis-white text-center mb-4">

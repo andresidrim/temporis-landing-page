@@ -18,7 +18,6 @@ export default function RootLayout({
       <body
         className={`${cinzelDecorative.variable} ${lora.variable} ${vt323.variable} ${pressStart.variable} antialiased`}
       >
-        <Header />
         <ReactLenis root options={{ duration: 0.5 }}>
           {children}
         </ReactLenis>

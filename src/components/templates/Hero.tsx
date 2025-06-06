@@ -21,7 +21,7 @@ export default function Hero() {
         className="absolute w-full h-full inset-0 object-cover object-center pixelated-image"
       />
       <div className="absolute w-full h-full inset-0 bg-black/50 z-10" />
-      <Container className="relative font-lora text-7xl z-20 animate-fade-in">
+      <Container className="relative font-inter text-7xl z-20 animate-fade-in">
         <Image
           src={logo}
           alt="Logo do jogo Temporis"

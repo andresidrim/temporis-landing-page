@@ -16,7 +16,7 @@ export default function Link({
     <Component
       href={href}
       className={cn(
-        "font-lora text-temporis-black cursor-pointer text-lg hover:underline",
+        "font-inter text-temporis-black cursor-pointer text-lg hover:underline",
         className,
       )}
       {...props}
