@@ -31,6 +31,11 @@ const AmazonHackingVisitsPage = async () => {
             <TableRow className="text-3xl font-bold mb-4 z-10 text-center text-temporis-green">
               <TableCell colSpan={4}>Visitas no Amazon Hacking</TableCell>
             </TableRow>
+            <TableRow className="text-3xl font-bold mb-4 z-10 text-center text-temporis-green">
+              <TableCell colSpan={4}>
+                {`${visits.length} pessoas já viveram o Temporis!`}
+              </TableCell>
+            </TableRow>
             <TableRow className="border-t-20 border-transparent">
               <TableCell className="text-left font-bold pl-6 text-temporis-green">
                 Nome
